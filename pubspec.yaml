@@ -1,0 +1,45 @@
+name: guante_traductor_app
+description: "Aplicación móvil para la traducción de Lenguaje de Señas Peruano (LSP) conectada a un guante con ESP32."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Conexión Bluetooth Low Energy (BLE)
+  flutter_blue_plus: ^2.3.9
+
+  # Síntesis de voz (Text-to-Speech)
+  flutter_tts: ^4.2.5
+
+  # Base de datos local para perfiles, palabras frecuentes y señas
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Gestión de estado global
+  provider: ^6.1.2
+
+  # Iconos adicionales
+  cupertino_icons: ^1.0.8
+  image_picker: ^1.2.2
+  path_provider: ^2.1.4
+  url_launcher: ^6.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.8
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
